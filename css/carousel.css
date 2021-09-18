@@ -1,0 +1,88 @@
+  /* carousel */
+  body {
+
+    background: #F5F2F2 ;
+    text-align: center;
+    font-family: sans-serif;
+    overflow-x: hidden;
+  }
+
+  
+
+  .containercarousel{
+
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 950px;
+  }
+  
+  .carousel {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; 
+    animation: rotate360 60s infinite forwards linear;
+  }
+  .carousel__face { 
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000p gainsboro;
+    display: flex;
+  }
+  
+  containercarousel, span {
+    margin: auto;
+    font-size: 2rem;
+    color: gold;
+    border: 1px solid black;
+    border-style: solid black;
+  }
+  
+  
+  .carousel__face:nth-child(1) {
+    background-image: url("https://intcomex.shopshop.com.gt/uploads/producto_105665/Mesa%20de%20trabajo%2021.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    transform: rotateY(  0deg) translateZ(430px); }
+  .carousel__face:nth-child(2) { 
+    background-image: url("https://m.media-amazon.com/images/I/71h6PpGaz9L._AC_SL1500_.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+      transform: rotateY( 40deg) translateZ(430px); }
+  .carousel__face:nth-child(3) {
+    background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0PDRMNDxANEA8PDw8PEA0PDg8NDg4PFhEWFhURFRYYHSggJBolGxUVITEhJisrLi4uFx8zODMsNygtLisBCgoKDg0NFQ8QFS0eFR0tLS0tLS0tKystKy0rKysrNy0tLSsrKy0tKzctKzctMjcrLS4rKys3KystLi03KystK//AABEIAJ8BPgMBIgACEQEDEQH/xAAbAAEBAAMBAQEAAAAAAAAAAAAAAwIEBQYBB//EADsQAAIBAwEECAMFBwUBAAAAAAABAgMEESEFEjFRBhNBYXGBkaEiMlJCgrHB0QczU2JykvAjQ2PS4RT/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAQID/8QAHxEBAQEBAAIBBQAAAAAAAAAAAAERAgNBcRITITEy/9oADAMBAAIRAxEAPwD9UAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD45JAfQQnXfYvU1as5Pi34dhcTW5UuYR4vyWpjC9pN43seOhzZohNDDXoAeep15w+WTXdxXobdHbHZUj96P6MYa6wI0LunU+WSb5cJejLEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMowb4JsDEF42z7Xjw1M1Siuz11Lia1kmz7uGxInIYajJEpFpEpFRCZGaLzJSQGtNEZo2JojNAa8kSki8kSkgNeRsUNp1qf2t5fTP4vfiRkiUkRXdt9uUpaTTg+fzR9tfY6dKrGa3oyjJc4tNHi5I+QqSg96MpRfOLaYHtweZttv1o6TUai5/JL1Wnsda12zb1NN7cl9M/h9+BFdAAAAAAAAAAAAAAAAAAAAD7FNvC1fID4Dap2cnxwvdmxC1guzPj+hcRz4Qb4JvwLwtJdrS92b2D4MNQjbwXZnx1KMyZiyoxZgzNmDAmzCRSROQEpEpFpEpARkRki8iMgISRGaL1Glq9Fzehqf/VRlPq1UpOfHcVSLnjnjOQMZolJFqjS4tLPNpZJyQGvJEpIvJEpIioyROSLSRNoCTRg0VZgwKW17Wpfu5yivp4x9Hode16SdlWH3qf/AFf6nBaMWgPc2t/Rq/u5xb+nhL0epsH56b9ptq5p6b2/H6anxe/Eg9mDjWnSOjLSopU3z+eHqtfY61KrCa3oSjJc4tSXsFZgAAAAAAAAAAfHOccSg8NPx05H0Abltfxl8M8Rlz+zLwf5P3N04koJkVtOrQnicXKi8JPtj3J/k/IqPQMxJ21zTqx3oSTXb2NdzRQqPjMWZMxYGLMGZswYGEjCRRk2BORKRWROQEZGpeSmoNwjvS4Y5d5uSJSA8vWnNy+NtyX1cV5dh5jpH0Uub6vSrWtSFGdKSbuJSlF08apx3Vlyyv8A0/R6lOLeXGLfNpNmEkTFeS2F0WlRlOreztL2rJxcK8rGjTrQeu9meredNXrxPQSRsSRGRUQkiUkXkiUkRUZInJFpInJARaMGirRg0BNoxZRoxaAm0fDNoxaAxwZUqs4PehKUXzi3F+x8wAOxadI60dKijUXP5J+2nsdq021b1NN7cl9NT4ffgeMwVt7WpUeIRcvDgvFge+BydhWFajvdZJbrSxBNvD7X3HWIoAAAAAAAAGk1h6p9j4MADQnZTpy6yhJxa+xnTwX6PTwN+w21GT3Kq6ua0bekc9/L8ARubWFRfEtVwktJL/ORdTHaPjPO0rmva6S+Olz7F+n4HatbynVWYPXti9JLyKizMWZMxYGDJsozBgTkTkUkTkBKRKRaRKQEZEZF5EpAQkiUkXkiMkBGSJSRaSJyRFQkickWkickBJowaKtGDQEmjFoo0YtAYNGOCii28JNt8EtWzXvbuhQ0rVEpL/ah/qVvBxTwvvNAZm3abMrVfli0vql8MTzs+keXijBU19csVKvrjC8lnvNzZvSO5pPSo5LOXCo3Ui/XX0YHsbPo9SjrUbm+XCPodinTjFYikkuxLB5/Z3S2hPCqp0pfUvjp/qv81O/RqwnHehKMovhKLUl6oiswAAAAAAAAAAAAAAADQrWDT36L3JLXdy1Hyxw/A3wBCz2vr1dZOMl9rGPVL8VodVNNZTTT4Napo5lxbwqLElw4PhKL7macXXtnlPfp9umi/qXZ4rzwVHdZgyFpfU6q0eJY+V8fLmi7KicicirJyAlInIrInICMiUi0iUgIyRKRaRKQEZIlJFpInIioyROSLSROSAk0YNFKzjCHWTlCnT4dZUkoQzyTfF9yyzg33Si3hpQg68v4k96lRXeo/O/PdEmmOzGnKWcJvCy32Jc2+xd5zbzbFrS03nWn9FFrcz31Hp/apHm77alxcaVajcc5VKKUKUfCC0z3vXvNZI7c+Oe3Prqx0L7b1zUTjFqjTem5RzFtcpT+Z+GcdxylAuoGcaLbwuL4JcWavEYnVayiVpykjr2nRy8qcKM0vqnimvH4tfQ7Np0Klxq1Yr+WnFyfq8fgcrI6S15qjcM62zbytGeaLqKfKnlt+KXE9TZ9FLSH+1Ko/qqybXppH2O1Q2eordioQj9MIpL0Rhtq9H9o16rlTrxSnCMJZxutqWeK56HYIW9nCnKU453pqKlJvio5wvd+pcigAAAAAAAAAAAAAAAAAA0rnZ6b3qfwy444Qb56cH3r3FvtKUH1dZPPP7WOfeu9G6YV6MZrdksr0afNPsZdReM1JZTTT7UYyOVKlVoPeg3KHbpmS/qiuPivTtN63uVOClw3uGuU9caMqM5E5FZE5ASkSkVkTkBGRORWRhutvCTb5LUCEiUjmbX6UWFtmMqvW1Fp1NvirJPlKWd1eue48dtPpteVsxo4toP+G3Ks131XqvuqJm1248PXXw9xtK+t7ZZuKsKbxlU3mVWS7qa183hd55baHTRv4bWkof8ANXUalTxUPlXnvHmrLZ11cyzSpVqrby5RjKeXzlL9T0mz/wBn9/Uw6nVUV/PPfn6RyvVoztrv9rx8f1fy85dXdWtPrKs51J/VOTk0uS5LuRjFM/SbH9n1pDDrVKtV8o4owfksv3PQ2Ow7Sh+6oUotfbcd6f8AdLLNTWOvJx6flNhsO8ra06NWSf2t3dh/dLCPRWXQe4etWpTprks1Zfkvc/ROr5s+qC5eupr6rHDq76eXs+h9pD5usqv+aW7H0jj8TuWuzqdNYp06dP8Apiot+ODeBL1azJIkrddrb9jOMIrgl+ZkCKAAAAAAAAAAAAAAAAAAAAAAAAAAAYuC4YWNdOzvMgBLDXDVcnxXgz5lP/NUWaNLam9GhUlDO/GEnGUVlplRSRGvOMIOpOUYQjrKpOShCK75PRHm+j20by5c4Tr43YzeVRpb6a8seqJ9IOjlzVqw6ujQvX1ak7ralzUqUaU8tbsLWklDONcqK4gkR2h06tt90bGlWv6y7KMJqivvJOT8ljvPNX9ba19UVC4uLa1jUlGCtOujSTcnhRlTpuVR8V8/sfpG1ejtG6sVYzzRi+rc3aqNvFzitcRw1ut50ZrdHeg+zdntToU5upHhVq1JVJLwXDPfgutzrP1HlqH7OIUmlWndXEsJ7lrTpUacVnGtSrLHkte49PsTota0ZZdnaxSXwuVSd5Vb0w25xUY9uiz4npcAhe+r7fFHCwkklwS4LyG6fQRkSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPp8AHzdWc4WeeNT6AAAAAAAAAAAAAAAAAAAAAAAAAAAAH//2Q==");
+    transform: rotateY( 80deg) translateZ(430px); }
+  .carousel__face:nth-child(4) {
+    background-image: url("https://www.officedepot.com.gt/medias/27688.gif-1200ftw?context=bWFzdGVyfHJvb3R8MTgzNzgwfGltYWdlL2pwZWd8aDc3L2hiYS85NTM2MzEyMjEzNTM0LmpwZ3wyMzQ3YjQ4NDhhMzU1YjIzMWNlZDdlNjkxMjQxZDg5MjZmMTZlMzAwZWE5Mzk0OWU5NTAyN2JhZGM3ZTBlMjc1");
+    transform: rotateY(120deg) translateZ(430px); }
+  .carousel__face:nth-child(5) { 
+    background-image: url("http://productochino.com/wp-content/uploads/2019/07/aliexpress-promo-tech-julio2019-800x419.jpg");
+   transform: rotateY(160deg) translateZ(430px); }
+  .carousel__face:nth-child(6) { 
+    background-image: url("https://imagenes.elpais.com/resizer/E2IogwGa6axNRXXw1C_kE51BJL4=/414x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/ID6GHHK7GFDYDON2YWWJUFASCE.jpg");
+   transform: rotateY(200deg) translateZ(430px); }
+  .carousel__face:nth-child(7) { 
+    background-image: url("https://imagenes.elpais.com/resizer/_A_K_mMlUOkD9l99jH8dbMayIZM=/414x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/YMBII524IFFOVBGZZHUMSVQIGE.jpg");
+   transform: rotateY(240deg) translateZ(430px); }
+  .carousel__face:nth-child(8) {
+    background-image: url("https://as01.epimg.net/mexico/imagenes/2021/05/24/showroom/1621849119_792399_1621849190_noticia_normal_recorte1.jpg?fit=967%2C297&ssl=1?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    transform: rotateY(280deg) translateZ(430px); }
+  .carousel__face:nth-child(9) {
+    background-image: url("https://as01.epimg.net/mexico/imagenes/2021/06/21/showroom/1624257359_405354_1624354847_noticia_normal_recorte1.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    transform: rotateY(320deg) translateZ(430px); }
+  
+  
+  
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+  

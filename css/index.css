@@ -1,0 +1,14 @@
+#product{
+    background: whitesmoke;
+}
+
+section, #product2{
+    background: whitesmoke;
+}
+
+#sesion a{
+  float: right;
+  list-style-type: none;
+  text-align: left;
+  padding: 10px;
+}
