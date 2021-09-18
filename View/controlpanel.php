@@ -29,7 +29,7 @@ session_start();
 $nom = $_SESSION["usuario"];
 
 if(!isset($_SESSION["usuario"])){
-  echo header("Location: http://192.168.1.117/TIENDA-ENLINEA-SEMINARIO/View/controlpanel.php");
+  echo header("Location: ../../View/controlpanel.php");
 }
 
 

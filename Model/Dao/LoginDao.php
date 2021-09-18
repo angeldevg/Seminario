@@ -16,10 +16,10 @@ if(isset($_POST["btningresar"]))
 
 		$_SESSION["usuario"] = $_POST["usuario"];
 		
-		echo header("Location: http://192.168.1.117/TIENDA-ENLINEA-SEMINARIO/View/controlpanel.php");
+		echo header("Location: ../../View/controlpanel.php");
 	}else
 	{
-		echo header("Location: http://192.168.1.117/TIENDA-ENLINEA-SEMINARIO/View/login.html");
+		echo header("Location: ../../View/login.html");
 		
 	}
 }
