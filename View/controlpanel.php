@@ -96,7 +96,7 @@ if(!isset($_SESSION["usuario"])){
                           </div>
                           <div class="media-body text-right">
                             <h3>278</h3>
-                            <span>Proveedores nuevos</span>
+                            <span>Proveedores</span>
                           </div>
                         </div>
                       </div>
