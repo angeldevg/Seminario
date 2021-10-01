@@ -96,7 +96,7 @@ if(!isset($_SESSION["usuario"])){
                           </div>
                           <div class="media-body text-right">
                             <h3>278</h3>
-                            <span>Proveedores</span>
+                            <span><a href="index.html"> <h3>Proveedores</h3> </a></span>
                           </div>
                         </div>
                       </div>
@@ -113,7 +113,7 @@ if(!isset($_SESSION["usuario"])){
                           </div>
                           <div class="media-body text-right">
                             <h3>156</h3>
-                            <span>New Comments</span>
+                            <span>Ofertas</span>
                           </div>
                         </div>
                       </div>
@@ -130,7 +130,7 @@ if(!isset($_SESSION["usuario"])){
                           </div>
                           <div class="media-body text-right">
                             <h3>64.89 %</h3>
-                            <span>Bounce Rate</span>
+                            <span>Compras</span>
                           </div>
                         </div>
                       </div>
@@ -147,7 +147,7 @@ if(!isset($_SESSION["usuario"])){
                           </div>
                           <div class="media-body text-right">
                             <h3>423</h3>
-                            <span>Total Visits</span>
+                            <span>Sucursales</span>
                           </div>
                         </div>
                       </div>
@@ -164,7 +164,7 @@ if(!isset($_SESSION["usuario"])){
                         <div class="media d-flex">
                           <div class="media-body text-left">
                             <h3 class="danger">278</h3>
-                            <span>New Projects</span>
+                            <span>Categorias</span>
                           </div>
                           <div class="align-self-center">
                             <i class="icon-rocket danger font-large-2 float-right"></i>
@@ -181,7 +181,7 @@ if(!isset($_SESSION["usuario"])){
                         <div class="media d-flex">
                           <div class="media-body text-left">
                             <h3 class="success">156</h3>
-                            <span>New Clients</span>
+                            <span>Usuarios</span>
                           </div>
                           <div class="align-self-center">
                             <i class="icon-user success font-large-2 float-right"></i>
@@ -199,7 +199,7 @@ if(!isset($_SESSION["usuario"])){
                         <div class="media d-flex">
                           <div class="media-body text-left">
                             <h3 class="warning">64.89 %</h3>
-                            <span>Conversion Rate</span>
+                            <span>Inventario</span>
                           </div>
                           <div class="align-self-center">
                             <i class="icon-pie-chart warning font-large-2 float-right"></i>
@@ -216,7 +216,7 @@ if(!isset($_SESSION["usuario"])){
                         <div class="media d-flex">
                           <div class="media-body text-left">
                             <h3 class="primary">423</h3>
-                            <span>Support Tickets</span>
+                            <span>Liquidaciones</span>
                           </div>
                           <div class="align-self-center">
                             <i class="icon-support primary font-large-2 float-right"></i>
@@ -236,7 +236,7 @@ if(!isset($_SESSION["usuario"])){
                         <div class="media d-flex">
                           <div class="media-body text-left">
                             <h3 class="primary">278</h3>
-                            <span>New Posts</span>
+                            <span>Ventas</span>
                           </div>
                           <div class="align-self-center">
                             <i class="icon-book-open primary font-large-2 float-right"></i>
