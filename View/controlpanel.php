@@ -113,7 +113,7 @@ if(!isset($_SESSION["usuario"])){
                           </div>
                           <div class="media-body text-right">
                             <h3>156</h3>
-                            <span>Ofertas</span>
+                            <span> <a href="index.html"> <h3> Ofertas </h3> </a></span>
                           </div>
                         </div>
                       </div>
@@ -130,7 +130,7 @@ if(!isset($_SESSION["usuario"])){
                           </div>
                           <div class="media-body text-right">
                             <h3>64.89 %</h3>
-                            <span>Compras</span>
+                            <span> <a href="index.html"> <h3> Compras </h3> </a> </span>
                           </div>
                         </div>
                       </div>
@@ -147,7 +147,7 @@ if(!isset($_SESSION["usuario"])){
                           </div>
                           <div class="media-body text-right">
                             <h3>423</h3>
-                            <span>Sucursales</span>
+                            <span> <a href="index.html"> <h3>Sucursales</h3> </a> </span>
                           </div>
                         </div>
                       </div>
@@ -164,7 +164,7 @@ if(!isset($_SESSION["usuario"])){
                         <div class="media d-flex">
                           <div class="media-body text-left">
                             <h3 class="danger">278</h3>
-                            <span>Categorias</span>
+                            <span> <a href="#"></a>  <h3>Categorias</h3> </span>
                           </div>
                           <div class="align-self-center">
                             <i class="icon-rocket danger font-large-2 float-right"></i>
@@ -181,7 +181,7 @@ if(!isset($_SESSION["usuario"])){
                         <div class="media d-flex">
                           <div class="media-body text-left">
                             <h3 class="success">156</h3>
-                            <span>Usuarios</span>
+                            <span> <a href="index.html"> <h3>Usuario</h3> </a>  </span>
                           </div>
                           <div class="align-self-center">
                             <i class="icon-user success font-large-2 float-right"></i>
